@@ -1,0 +1,31 @@
+
+
+# GIT JUNK
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias gaa='git add .'
+alias gss='gaa && git stash'
+alias gsp='git stash pop'
+alias ggpobf='git push origin "$(git symbolic-ref --short HEAD)" -f'
+alias ggpob='git push origin "$(git symbolic-ref --short HEAD)"'
+alias gpob='git pull origin "$(git symbolic-ref --short HEAD)" --rebase && git fetch'
+alias gc='git commit -a -S -m'
+alias gco='git checkout'
+alias gcom='git checkout master'
+alias gb='git branch'
+alias gs='git status'
+
+# DEV JUNK
+alias dopr='dev open pr'
+
+# RANDOM JUNK
+alias asdf='git add . && git rebase --continue'
+alias ls='ls -GFh'
+alias please=sudo
+alias rubytest='bundle exec rake test'
+alias rubychecks='bundle exec rubocop'
+alias runchecks='sewing-kit type-check && sewing-kit lint'
+alias sewing-kit='yarn run sewing-kit'
+alias yeet='gpob && ggpob'
+
+
