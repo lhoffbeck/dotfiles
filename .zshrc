@@ -32,3 +32,11 @@ zstyle ':vcs_info:*' enable git
 ZSH_THEME="powerlevel10k/powerlevel10k"
 source ~/.aliases
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+killport() {
+    if [ -z "$1" ]; then
+        echo "Usage: killport <port-number>"
+        return 1
+    fi
+    kill -9 $(lsof -i4:$1 -t)
+}

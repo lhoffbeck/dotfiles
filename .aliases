@@ -14,9 +14,10 @@ alias gco='git checkout'
 alias gcom='git checkout master'
 alias gb='git branch'
 alias gs='git status'
+alias gcp='git cherry-pick'
 
 # DEV JUNK
-alias dopr='dev open pr'
+alias debug="dev debug server"
 
 # RANDOM JUNK
 alias asdf='git add . && git rebase --continue'
@@ -25,7 +26,4 @@ alias please=sudo
 alias rubytest='bundle exec rake test'
 alias rubychecks='bundle exec rubocop'
 alias runchecks='sewing-kit type-check && sewing-kit lint'
-alias sewing-kit='yarn run sewing-kit'
 alias yeet='gpob && ggpob'
-
-
